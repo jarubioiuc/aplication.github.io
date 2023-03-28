@@ -1,4 +1,25 @@
-*,
+* { font-family: Arial, Verdana, sans-serif; color: #665544; text-align: center;}
+body { width: 80%; margin: 0 auto;}
+			
+@media screen and (max-width: 600px) {
+	table {	width: 100%;}
+		thead {
+				display: none;
+			  }
+		tr:nth-of-type(2n) {
+				background-color: inherit;
+			  }
+		td {
+				display: block;
+				text-align: center;
+			  }
+		td:before {
+				content: attr(data-th);
+				display: block;
+				text-align: center;
+				font-weight: bold;
+			  }
+			},
 *:before,
 *:after {
   -moz-box-sizing: border-box;
